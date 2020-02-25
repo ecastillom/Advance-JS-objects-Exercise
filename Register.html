@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Pet Salon</title>
+</head>
+<body>
+    <br>
+<form action="#" class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
+    
+    <p>
+        <label for="Name">
+            Name:
+        </label>
+        <input id="txtName" type="text" class="form-control">
+        
+        <label for="Age">
+            Age:
+        </label>
+        <input id="txtAge" type="number" name="Age" class="form-control">
+    </p>
+
+    <p>
+        <label for="Gender">
+            Gender:
+        </label>
+        <select name="Services" id="ddlGender">
+            <option value="" disabled selected>--Select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="Breed">
+            Breed:
+        </label>
+        <input id="txtBreed" type="text" class="form-control">
+    </p>
+
+    
+    <p>
+        <label for="Services">
+            Service:
+        </label>
+        <select name="Services" id="ddlService">
+            <option value="" disabled selected>--Select--</option>
+            <option value="Shower">Shower</option>
+            <option value="Hair Cut">Hair Cut</option>
+            <option value="Full Service">Full Service</option>
+        </select>
+    </p>
+    
+    <p>
+        <label for="OwnerName">
+            Owner's Name:
+        </label>
+        <input id="txtOwnerName" type="text" class="form-control">
+        </p>
+
+        
+    <p>
+        <label for="ContactPhone">
+            Contact Phone::
+        </label>
+        <input id="txtOwnerContact" type="text" class="form-control">
+    </p>
+
+    <input type="button" value="Register" onclick="Register()" class="btn btn-success">
+</form>
+<br><br>
+<div>
+    <table class="table">
+        <thead>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                Gender
+            </th>
+            <th>
+                Breed
+            </th>
+            <th>
+                Service
+            </th>
+            <th>
+                Owner Name
+            </th>
+            <th>
+                Contact
+            </th>
+        </thead>
+        <tbody id="rowPet">
+        
+        </tbody>
+    </table>
+</div>
+
+    <script src="MyScript.js">
+
+    </script>
+</body>
+</html>
